@@ -1,0 +1,20 @@
+# make Database
+CREATE DATABASE arp_db default CHRACTER SET UTF8;
+
+# use db;
+use arp_db;
+
+
+# make Table
+CREATE TABLE arp_db;
+(
+	idx INT PRIMARY KEY AUTO_INCREMENT,
+	arp_type VARCHAR(20),
+	send_mac CHAR(20),
+	recv_mac CHAR(20),
+	send_ip CHAR(20),
+	recv_ip CHAR(20),
+	timestamp VARCHAR(20),
+	is_garp CHAR(1)
+} ENGINE=INNODB;
+
