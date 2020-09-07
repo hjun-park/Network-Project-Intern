@@ -1,0 +1,10 @@
+{
+	"net1": {
+		"interfaces": "enp0s8",
+		"valid-lifetime": 500,
+		"pool": "192.168.50-192.168.0.100",
+		"subnet": "255.255.255.0",
+		"router": "192.168.0.1",
+		"dns-server" : "8.8.8.8"
+			}
+}

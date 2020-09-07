@@ -1,0 +1,11 @@
+CREATE TABLE lease4 (
+	interface VARCHAR(20) DEFAULT 0,
+    address_int INT UNSIGNED PRIMARY KEY NOT NULL DEFAULT 0,  # IPv4 address 
+	address VARCHAR(20) DEFAULT 0, 
+    hwaddr VARCHAR(20) DEFAULT 0,                       # Hardware address
+    valid_lifetime INT UNSIGNED DEFAULT 0,                # Length of the lease (seconds)
+    expire TIMESTAMP DEFAULT CURRENT_TIMESTAMP,                           # Expiration time of the lease4 
+	is_used INT	DEFAULT 0
+    ) ENGINE = INNODB;
+
+
