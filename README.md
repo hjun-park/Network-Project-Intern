@@ -4,6 +4,9 @@ Ncat에서 배운 소소한 C언어 코딩 팁 ( Tips for coding C languages lea
 
 ### Ncat 코드 읽기
 
+&nbsp;
+&nbsp;
+
 1. **옵션값을 받을 때 함수 사용**
  - getopt_long 을 이용해서 옵션을 할당
 
@@ -92,9 +95,8 @@ read mode
 write mode
 file name is `test.txt'
 ```
-
-
-
+&nbsp;
+&nbsp;
 2.  **strspn / strchr 함수 작동 예제**
 
 2-1. **strchr 함수 예제** 
@@ -167,7 +169,8 @@ int main() {
 ```
 
 
-
+&nbsp;
+&nbsp;
 3.  **모든 함수가 static 함수**
 
 ```c
@@ -186,7 +189,8 @@ int main() {
 
 
 
-
+&nbsp;
+&nbsp;
 4. **예외처리를 매크로를 이용하여 처리**
 
 ```c
@@ -265,7 +269,8 @@ bye("assertion failed: %s", #expr); \
 자료형에 구속을 받는다면 인라인 템플릿을 이용해본다.
 ```
 
-
+&nbsp;
+&nbsp;
 
 5. **return 값에 함수의 결과를 반환한다. 코드가 더 간결해진다는 장점이 있다.**
 
@@ -285,7 +290,8 @@ struct sockaddr_list *sl, int af)
 }
 ```
 
-
+&nbsp;
+&nbsp;
 
 6. **dotelnet**에는 telnet 협상 기능 코드가 있다. 숫자에 따라 다르다.
 
@@ -316,7 +322,8 @@ void dotelnet(int s, unsigned char *buf, size_t bufsiz)
  }
 ```
 
-
+&nbsp;
+&nbsp;
 
 7. 초기화 하는 init 파트를 만들었으면 자연스레 이를 해제하는 free 파트도 함께 만들어 준다.
 
@@ -343,7 +350,8 @@ void http_request_free(struct http_request *request)
 ```
 
 
-
+&nbsp;
+&nbsp;
 8. 실패로 인해 함수를 종료할 때 **goto문을 사용**
 
 ```c
@@ -405,7 +413,8 @@ int main()
 ```
 
 
-
+&nbsp;
+&nbsp;
 9.  여러 개의 user-defined 변수는 매크로를 쓰는 방법보다 enum을 쓰는 방법도 존재
       
 
@@ -435,7 +444,8 @@ struct http_challenge {
  ⇒ 15번하고 겹침
 
 
-
+&nbsp;
+&nbsp;
 
 10. switch~case 문에서 enum을 사용한 Ncat 코드
 
@@ -515,7 +525,8 @@ int main()
 ```
 
 
-
+&nbsp;
+&nbsp;
 11. 옵션을 구조체로 선언하고 option_init 함수를 만들어서 초기화를 진행
 
 ```c
@@ -573,7 +584,8 @@ struct option long_options[] = {
 ```
 
 
-
+&nbsp;
+&nbsp;
 12. pcap_util에서 보면 기존 함수를 가지고 safe 한  함수로 만들어 사용하고 있음
 
 ```c
