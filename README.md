@@ -1,2 +1,2 @@
-# Simple-DHCP-Service
+# Simple-DHCP-Server
 Implement DHCP Server
