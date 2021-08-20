@@ -1,0 +1,7 @@
+CREATE TABLE dns_info (
+	ipaddr VARCHAR(20) DEFAULT ' ',
+	ipaddr_int INT UNSIGNED PRIMARY KEY NOT NULL DEFAULT 0,
+	domain	VARCHAR(20) DEFAULT ' ',
+    ) ENGINE = INNODB;
+
+

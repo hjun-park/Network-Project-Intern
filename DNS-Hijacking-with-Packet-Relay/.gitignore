@@ -1,0 +1,4 @@
+*.o
+dnshijack
+*.txt
+*.gdb_history
