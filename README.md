@@ -1,5 +1,5 @@
 # Network-Project-Intern
-[2019 ~ 2020] 보안 솔루션 개발 인턴 프로젝트
+[2020.06 - 2020.09] 보안 솔루션 개발 인턴 프로젝트
 
 ### 1. ARP 패킷 캡쳐 모니터링
 ![image](https://user-images.githubusercontent.com/70880695/130266100-fd54086b-080a-4ca2-a163-3a2154636eac.png)
